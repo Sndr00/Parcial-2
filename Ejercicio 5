@@ -1,0 +1,17 @@
+//Dice si un año es bisisesto o no
+#include <stdio.h>
+
+int main(){
+int a;	
+	
+printf ("Ingrese un a�o: ");
+scanf("%d",&a);
+
+	if (a%4==0 && a%100!=0 || a%400==0){	
+	printf("Es bisiesto", a);}
+	
+	else{
+	printf("No es bisiesto", a);}
+	
+return 0;	
+}
