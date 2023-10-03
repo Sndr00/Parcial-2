@@ -4,7 +4,7 @@
 int main(){
 int a;	
 	
-printf ("Ingrese un a�o: ");
+printf ("Ingrese un año: ");
 scanf("%d",&a);
 
 	if (a%4==0 && a%100!=0 || a%400==0){	
