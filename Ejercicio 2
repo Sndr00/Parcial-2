@@ -1,0 +1,16 @@
+//Dice si los numeros del 1 al 100 son multiplos o no del 3
+#include <stdio.h>
+
+int main (){
+int x;
+
+for (x=1;x<=100;x++){
+	
+	if (x % 3 == 0){
+	printf("%d es multiplo de 3\n", x);	}
+	
+	else{
+	printf("%d no es multiplo de 3\n", x);	}
+}
+	return 0;
+}
