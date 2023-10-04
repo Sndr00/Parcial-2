@@ -1,0 +1,47 @@
+//Numero aleatorio entre 1 y 5 que realiza operaciones y el programa se detiene hasta que salga 5 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main (){
+    
+srand(time(NULL));
+int r1, r2, val;
+
+val=rand() % 6;
+
+while (val<5){
+    
+    val=rand() % 6;
+    r1=rand() %10;
+    r2=rand() %10;
+    
+    switch (val){
+    
+        case 1:
+        printf("%d + %d: %d\n", r1, r2, r1+r2);
+           val=rand() % 5;
+        break;
+        
+        case 2:
+        printf("%d - %d: %d\n", r1, r2, r1-r2);
+           val=rand() % 5;
+        break;
+        
+        case 3:
+        printf("%d x %d: %d\n", r1, r2, r1*r2);
+           val=rand() % 5;
+        break;
+        
+        case 4:
+        printf("%d / %d: %d\n", r1, r2, r1%r2);
+           val=rand() % 5;
+        break;
+        
+        case 5:
+        break;
+    }}
+    
+return 0;
+}
